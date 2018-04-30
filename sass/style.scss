@@ -29,6 +29,34 @@ body {
     margin: 0 auto;
 }
 
+.caption {
+    margin: 0;
+    text-align: center;
+    font-size: 38px;
+    color: #333;
+    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+}
+
+.line {
+    display: inline-block;
+    width: 25%;
+    margin: 5px auto;
+    height: 3px;
+    background-color: $main-color;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    background-color: $main-color;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    margin: 15px 0;
+}
+
 /*#region logo*/
 .logo {
     background-color: white;
@@ -37,7 +65,7 @@ body {
         display: flex;
         justify-content: space-between;
 
-        .logo_img {
+        .logo__img {
             padding: 10px;
             padding-left: 30px;
 
@@ -49,15 +77,15 @@ body {
         .data {
             display: flex;
 
-            .data_adress,
-            .data_phone,
-            .data_clock {
+            .data__adress,
+            .data__phone,
+            .data__clock {
                 display: flex;
                 margin: 20px;
                 padding: 10px;
             }
 
-            .data_icon i {
+            .data__icon i {
                 width: 50px;
                 height: 50px;
                 color: black;
@@ -65,7 +93,7 @@ body {
                 font-size: 25px;
             }
 
-            .data_container {
+            .data__container {
                 display: flex;
                 flex-direction: column;
 
@@ -87,27 +115,25 @@ body {
     padding: 0 30px;
     margin: 0px;
 
-    .menu_top_items {
+    .menu__top__items {
         display: flex;
         margin: 0;
+
         li {
             list-style: none;
             margin: 20px 10px;
             text-transform: uppercase;
-            
+
             &:after {
                 content: "";
                 border-left: 1px solid white;
             }
-            
         }
 
         a {
             text-decoration: none;
             color: white;
             padding: 10px;
-
-
 
             @include xl {
                 transition: 0.7s;
@@ -117,7 +143,6 @@ body {
                     opacity: 0.9;
                 }
             }
-            
         }
     }
 }
@@ -136,7 +161,7 @@ body {
     text-align: center;
     color: white;
 
-    .jumbotron_slogan {
+    .jumbotron__slogan {
         h1 {
             margin: 0;
             font-size: 45px;
@@ -177,40 +202,103 @@ body {
     background-color: rgb(240, 240, 240);
     padding: 20px;
     text-align: center;
-    margin-top: 10px;
-    h6 {
-        margin: 0;
-        text-align: center;
-        font-size: 38px;
-        color: #333;
-        font-weight: lighter;
-        font-family: "Roboto", sans-serif;
-    }
-
-    span {
-        display: inline-block;
-        width: 25%;
-        margin: 5px auto;
-        height: 3px;
-        background-color: $main-color;
-    }
+    padding: 30px 0;
 
     p {
         font-size: 17px;
         max-width: 950px;
         margin: 20px auto;
     }
-
-    button {
-        border: none;
-        border-radius: 5px;
-        background-color: $main-color;
-        font-family: "Montserrat", sans-serif;
-        color: white;
-        text-transform: uppercase;
-        padding: 20px 40px;
-        margin-top: 15px;
-    }
 }
 
 /*#endregion aboutUs*/
+
+/*#region offer*/
+
+.offer {
+    text-align: center;
+    padding: 30px 0;
+
+    .offer__text__items {
+        display: flex;
+        justify-content: center;
+        margin: 20px 40px;
+
+        ul {
+            li {
+                list-style-type: square;
+            }
+        }
+    }
+}
+
+/*#endregion offer*/
+
+/*#region price*/
+.price {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(240, 240, 240);
+}
+
+/*#endregion */
+
+/*#region contact*/
+
+.contact {
+    text-align: center;
+    padding: 30px 0;
+
+    .form {
+        display: flex;
+        justify-content: center;
+
+        .form__data {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin: 10px;
+                padding: 15px 60px;
+            }
+        }
+
+        .form__message {
+            input {
+                margin: 10px;
+                padding: 84px 120px;
+            }
+        }
+    }
+}
+
+/*#endregion contact */
+
+/*#region map*/
+
+.map {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 60px;
+
+    iframe {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*#endregion map*/
+
+/*#region footer*/
+footer {
+    font-size: 13px;
+
+    span {
+        padding: 30px 0;
+    }
+}
+
+/*#endregion footer*/
