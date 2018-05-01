@@ -31,7 +31,7 @@ body {
 
 .line {
   display: inline-block;
-  width: 25%;
+  width: 60px;
   margin: 5px auto;
   height: 3px;
   background-color: #F44336;
@@ -118,13 +118,16 @@ body {
 
 .menu .menu__top__items li:after {
   content: "";
+  display: inline-block;
   border-left: 1px solid white;
+  height: 13px;
 }
 
 .menu .menu__top__items a {
   text-decoration: none;
   color: white;
   padding: 10px;
+  display: inline-block;
 }
 
 @media (min-width: 1400px) {
@@ -210,6 +213,7 @@ body {
 
 .offer .offer__text__items ul li {
   list-style-type: square;
+  text-align: left;
 }
 
 /*#endregion offer*/
