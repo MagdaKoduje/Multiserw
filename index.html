@@ -93,7 +93,7 @@
             <h1>Receive
                 <span>Instant </span>Service</h1>
             <p>We offer repair many different types of devices including computers, smartphones, tablets, gambing consoles etc...</p>
-            <button>View serices</button>
+            <button class="button">View serices</button>
         </div>
     </section>
     <section class="aboutUs">
@@ -144,12 +144,17 @@
         <div class="container">
             <div class="section__title">
                 <h2 class="caption">Oferta</h2>
-                <span class="separator"></span>
+                <span class="separator"></span>    
+            </div>
+            <h3 class="offer__intro">MULTISERW świadczy szeroki zakres usług dotyczący sprzętu elektroniczego. Zajmujemy się naprawą oraz sprzedażą
+                    sprżetu elektronicznego. </h3>
+            <div class="offer_button">
+                <button class="button active" id="repairs-button">Naprawy</button>
+                <button class="button inactive" id="installation-button">Montaż</button>
+                <button class="button inactive" id="sales-button">Sprzedaż</button>
             </div>
             <div class="offer">
-                <h3 class="offer__intro">MULTISERW świadczy szeroki zakres usług dotyczący sprzętu elektroniczego. Zajmujemy się naprawą oraz sprzedażą
-                    sprżetu elektronicznego. </h3>
-                <div class="offer__category ">
+                <div class="offer__category shown" id="repairs">
                     <div class="offer__category__text-container">
                         <h4 class="offer__category__title">W ramach świadczonych usług naprawiamy między innymi:</h4>
                         <ul class="offer__category__list">
@@ -168,8 +173,8 @@
                         <img class="offer__category__img" src="images/vintage.jpeg">
                     </div>
                 </div>
-                <span class="separator offer__separator"></span>
-                <div class="offer__category">
+                <!-- <span class="separator offer__separator"></span> -->
+                <div class="offer__category hidden" id="installation">
                     <div class="offer__category__text-container">
                         <h4 class="offer__category__title">Świadczymy również usługi w zakresie montażu i instalacji:</h4>
                         <ul class="offer__category__list">
@@ -183,8 +188,8 @@
                         <img class="offer__category__img" src="images/monitoring.jpg">
                     </div>
                 </div>
-                <span class="separator offer__separator"></span>
-                <div class="offer__category">
+                <!-- <span class="separator offer__separator"></span> -->
+                <div class="offer__category hidden" id="sales">
                     <div class="offer__category__text-container">
                         <h4 class="offer__category__title">Posiadamy również w sprzedaży poniżej wymieniony sprzęt elektroniczny:</h4>
                         <ul class="offer__category__list">
