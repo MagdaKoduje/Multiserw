@@ -187,19 +187,66 @@ body {
 /*#endregion jumbotron*/
 /*#region aboutUs*/
 .aboutUs {
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 20px;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
-.aboutUs p {
+.aboutUs .aboutUs-container {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.aboutUs .aboutUs-container .photo {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 250px;
+}
+
+.aboutUs .aboutUs-container .photo img {
+  height: auto;
+  border: 5px solid #ccc;
+  width: 100%;
+}
+
+.aboutUs .aboutUs-container .history {
+  text-align: left;
+  padding: 15px 50px;
+}
+
+.aboutUs .aboutUs-container .history p {
   font-size: 17px;
-  max-width: 950px;
-  margin: 20px auto;
+  margin: 0;
+  line-height: 30px;
+}
+
+.aboutUs .aboutUs-container .history button {
+  margin-top: 30px;
 }
 
 /*#endregion aboutUs*/
+/*#region partners*/
+.partners {
+  background-color: black;
+}
+
+.partners h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.partners .partners_logo {
+  display: flex;
+}
+
+.partners .partners_logo img {
+  width: 25%;
+}
+
+/*#endregion partners*/
 /*#region offer*/
 .offer {
   text-align: center;
