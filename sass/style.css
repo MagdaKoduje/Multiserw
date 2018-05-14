@@ -287,17 +287,42 @@ body {
   border: 5px solid #ccc;
 }
 
-.offer .offer__separator {
-  width: 100px;
-  margin: 30px;
-}
-
 /*#endregion offer*/
 /*#region price*/
 .price {
   text-align: center;
   padding: 30px 0;
   background-color: #f0f0f0;
+}
+
+.price .price__container {
+  display: flex;
+  justify-content: center;
+}
+
+.price .price__container .price-section {
+  flex-basis: 400px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.price .price__container .price-section .fa {
+  color: #F44336;
+  font-size: 40px;
+  padding-top: 20px;
+  transition: 1.5s;
+}
+
+.price .price__container .price-section h4 {
+  text-transform: uppercase;
+}
+
+.price .price__container .price-section li {
+  text-align: left;
 }
 
 /*#endregion */

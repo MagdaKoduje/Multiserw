@@ -1,4 +1,9 @@
 @media (min-width: 1200px) {
+  .button:hover {
+    border: 2px solid #F44336;
+    cursor: pointer;
+    opacity: 0.9;
+  }
   .menu .menu__top__items li a {
     transition: 0.5s;
   }
@@ -11,5 +16,17 @@
   }
   .partners .partners_logo img:hover {
     opacity: 1;
+  }
+  .price .price-section {
+    transition: 0.5s;
+  }
+  .price .price-section:hover {
+    transform: scale(1.1);
+  }
+  .price .price-section .fa {
+    transition: 2s;
+  }
+  .price .price-section:hover .fa {
+    transform: rotateY(360deg);
   }
 }
