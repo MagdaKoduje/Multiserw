@@ -1,41 +1,22 @@
-//Breakpoints
+// @media (max-width: 767px) {}
 
-//small tablets and large smartphones
-
-$screen-sm-min: 575px;
-
-// small tablets 
-
-$screen-md-min: 768px;
-
-//tablets and small desktops
-
-$screen-lg-min: 1230px;
-
-//large tablets and desktops
-
-$screen-xl-min: 1400px;
-
-@mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
-        @content;
-    }
-}
-
-@mixin md {
-    @media (min-width: #{$screen-md-min}) {
-        @content;
-    }
-}
-
-@mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
-        @content;
-    }
-}
-
-@mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
-        @content;
+$main-color: #F44336;
+// // @media (min-width: 768px) and (max-width: 1199px) {}
+    
+@media (min-width: 1200px) {
+//     // .button {
+//     //     &:hover {
+//     //          background-color: white;
+//     //          color: $main-color;    
+//     //          border: 2px solid $main-color; 
+//     //             cursor: pointer;  
+//     //     }
+//     // }
+    .menu .menu__top__items li a{
+        transition: 0.7s;
+        &:hover {
+            color: $main-color;                        
+            opacity: 0.9;
+        }
     }
 }

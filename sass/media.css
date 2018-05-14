@@ -1,1 +1,9 @@
-null
+@media (min-width: 1200px) {
+  .menu .menu__top__items li a {
+    transition: 0.7s;
+  }
+  .menu .menu__top__items li a:hover {
+    color: #F44336;
+    opacity: 0.9;
+  }
+}

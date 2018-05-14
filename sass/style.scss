@@ -8,7 +8,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-@import "media";
+// @import "media";
 
 $main-color: #F44336;
 
@@ -51,7 +51,6 @@ body {
     border-radius: 5px;
     background-color: $main-color;
     color: white;
-    cursor: pointer;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     padding: 20px 40px;
@@ -134,21 +133,11 @@ body {
                 height: 13px;
             }
         }
-
         a {
             text-decoration: none;
             color: white;
             padding: 10px;
             display: inline-block;
-
-            @include xl {
-                transition: 0.7s;
-
-                &:hover {
-                    color: $main-color;
-                    opacity: 0.9;
-                }
-            }
         }
     }
 }
@@ -238,19 +227,30 @@ body {
 /*#region partners*/
 
 .partners {
-    background-color: black;
-
-    h2 {
-        color: white;
-        text-align: center;
-        margin: 0;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(240, 240, 240);
+    p {
+        font-size: 17px;
+        // margin: 0;
+        line-height: 30px;
     }
 
     .partners_logo {
         display: flex;
-
-        img {
-            width: 25%;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 0;
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                opacity: 0.5;
+            }
+     
         }
     }
 }
