@@ -325,6 +325,9 @@ body {
     background-position: center;
     background-size: cover;
 
+    .container {
+        max-width: 1250px;
+    }
     .section__title .caption {
         color: white;
     }

@@ -299,6 +299,10 @@ body {
   background-size: cover;
 }
 
+.brands .container {
+  max-width: 1250px;
+}
+
 .brands .section__title .caption {
   color: white;
 }
