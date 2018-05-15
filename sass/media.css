@@ -24,7 +24,7 @@
     transform: scale(1.1);
   }
   .price .price-section .fa {
-    transition: 2s;
+    transition: 1s;
   }
   .price .price-section:hover .fa {
     transform: rotateY(360deg);
