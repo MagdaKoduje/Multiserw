@@ -438,9 +438,8 @@ body {
 /*#region footer*/
 footer {
   font-size: 13px;
-  background-color: #F44336;
+  background-color: black;
   color: white;
-  opacity: 0.9;
   padding: 0 30px;
   margin: 0px;
 }
