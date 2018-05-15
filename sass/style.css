@@ -443,10 +443,37 @@ body {
 /*#region footer*/
 footer {
   font-size: 13px;
+  background-color: black;
+  color: white;
+  padding: 0 30px;
+  margin: 0px;
+}
+
+footer .footer__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer span {
   padding: 30px 0;
+}
+
+footer .menu__bottom__items {
+  display: flex;
+  margin: 0;
+}
+
+footer .menu__bottom__items li {
+  list-style: none;
+  margin: 20px 10px;
+  text-transform: uppercase;
+}
+
+footer .menu__bottom__items li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: inline-block;
 }
 
 /*#endregion footer*/
