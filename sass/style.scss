@@ -314,6 +314,60 @@ body {
 
 /*#endregion offer*/
 
+/*#region brand*/
+
+.brands {
+    text-align: center;
+    padding: 30px 0;
+    background-color: grey;
+    background-image: url("../images/brand_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .section__title .caption {
+        color: white;
+    }
+
+    .other-brands {
+        margin: 0 auto;
+        color: white;
+        padding: 30px;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .shown {
+        display: block;
+    }
+
+    .slider {
+        padding: 20px 0;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: auto;
+                height: 30px;
+                margin: 0 auto;
+                opacity: 0.6;
+            }
+
+            .slider__LG {
+                height: 50px;
+            }
+        }
+    }
+}
+
+/*#endregion brand*/
+
 /*#region price*/
 .price {
     text-align: center;

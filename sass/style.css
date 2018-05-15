@@ -288,6 +288,58 @@ body {
 }
 
 /*#endregion offer*/
+/*#region brand*/
+.brands {
+  text-align: center;
+  padding: 30px 0;
+  background-color: grey;
+  background-image: url("../images/brand_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.brands .section__title .caption {
+  color: white;
+}
+
+.brands .other-brands {
+  margin: 0 auto;
+  color: white;
+  padding: 30px;
+  width: 50%;
+  font-size: 20px;
+}
+
+.brands .hidden {
+  display: none;
+}
+
+.brands .shown {
+  display: block;
+}
+
+.brands .slider {
+  padding: 20px 0;
+}
+
+.brands .slider div {
+  display: flex;
+  align-items: center;
+}
+
+.brands .slider div img {
+  width: auto;
+  height: 30px;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+.brands .slider div .slider__LG {
+  height: 50px;
+}
+
+/*#endregion brand*/
 /*#region price*/
 .price {
   text-align: center;
