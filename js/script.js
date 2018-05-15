@@ -68,7 +68,6 @@ window.onload = function () {
             buttonBrands.innerText = "Pokaż więcej marek";
         }
 
-
     });
 
 

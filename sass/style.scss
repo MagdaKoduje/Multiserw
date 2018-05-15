@@ -459,16 +459,11 @@ body {
 /*#region map*/
 
 .map {
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
+    text-align: center;
     background-color: rgb(240, 240, 240);
-    margin-bottom: 60px;
 
     iframe {
-        margin: 0;
-        padding: 0;
+        width: 100%;
     }
 }
 
