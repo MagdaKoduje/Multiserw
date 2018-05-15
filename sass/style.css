@@ -438,8 +438,9 @@ body {
 /*#region footer*/
 footer {
   font-size: 13px;
-  background-color: black;
+  background-color: #F44336;
   color: white;
+  opacity: 0.9;
   padding: 0 30px;
   margin: 0px;
 }
@@ -461,7 +462,6 @@ footer .menu__bottom__items {
 footer .menu__bottom__items li {
   list-style: none;
   margin: 20px 10px;
-  text-transform: uppercase;
 }
 
 footer .menu__bottom__items li a {

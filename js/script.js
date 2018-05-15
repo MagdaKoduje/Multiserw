@@ -57,7 +57,7 @@ window.onload = function () {
     var buttonBrands = document.getElementById("button-brands");
 
     buttonBrands.addEventListener("click", function () {
-        if (buttonBrands.innerText.toLowerCase === "Pokaż więcej marek".toLowerCase) {
+        if (buttonBrands.innerText.toLowerCase() === "Pokaż więcej marek".toLowerCase()) {
             otherBrands.classList.remove("hidden");
             otherBrands.classList.add("shown");
             buttonBrands.innerText = "Ukryj więcej marek";
