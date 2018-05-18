@@ -27,7 +27,7 @@ function hideSection(button, section) {
 
 function validateEmail(email) {
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if(!reg.test(email))
+    if (!reg.test(email))
         return false;
     else
         return true;
@@ -36,7 +36,7 @@ function validateEmail(email) {
 //weryfikacja telefon
 function validateTel(tel) {
     var reg = /^[0-9\+]{8,13}$/;
-    if(!reg.test(tel)) 
+    if (!reg.test(tel))
         return false;
     else
         return true;
@@ -89,7 +89,7 @@ window.onload = function () {
     });
     // contact section
 
-    
+
     var name = document.getElementById("firstname");
     var tel = document.getElementById("telephone");
     var email = document.getElementById("mail");
@@ -98,7 +98,7 @@ window.onload = function () {
     var buttonSubmit = document.getElementById("button-submit");
     var validationResult = document.getElementById("validation-result");
 
-    buttonSubmit.addEventListener("click", function() {
+    buttonSubmit.addEventListener("click", function () {
         if (name.value == "") {
             validationResult.innerText = "Proszę uzupełnić imię!!!";
         }
@@ -108,20 +108,21 @@ window.onload = function () {
         else if (message.value == "") {
             validationResult.innerText = "Proszę uzupełnić wiadomość!!!";
         }
-        else if (validateEmail(email.value) == false) {
-            validationResult.innerText = "Błedny format e-maila";
-        } 
-        else if (validateTel(tel.value) == false) {
+
+        else if (validateEmail(email.value) == false && tel.value == "") {
+            validationResult.innerText = "Błedny format Magda   e-maila";
+        }
+        else if (validateTel(tel.value) == false && email.value == "") {
             validationResult.innerText = "Błedny format telefonu";
-        } 
+        }
         else {
             validationResult.innerText = "";
             name.value = "";
             tel.value = "";
             email.value = "";
             message.value = "";
-        }            
- 
+        }
+
     });
 
 };
