@@ -1,3 +1,4 @@
+
 $('.slider').slick({
     infinite: true,
     slidesToShow: 4,
@@ -22,6 +23,24 @@ function hideSection(button, section) {
     button.classList.add("inactive");
 }
 
+//weryfikacja maila
+
+function validateEmail(email) {
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if(!reg.test(email))
+        return false;
+    else
+        return true;
+}
+
+//weryfikacja telefon
+function validateTel(tel) {
+    var reg = /^[0-9\+]{8,13}$/;
+    if(!reg.test(tel)) 
+        return false;
+    else
+        return true;
+}
 
 window.onload = function () {
     //section offer
@@ -67,12 +86,42 @@ window.onload = function () {
             otherBrands.classList.remove("shown");
             buttonBrands.innerText = "Pokaż więcej marek";
         }
+    });
+    // contact section
 
+    
+    var name = document.getElementById("firstname");
+    var tel = document.getElementById("telephone");
+    var email = document.getElementById("mail");
+    var message = document.getElementById("message");
+
+    var buttonSubmit = document.getElementById("button-submit");
+    var validationResult = document.getElementById("validation-result");
+
+    buttonSubmit.addEventListener("click", function() {
+        if (name.value == "") {
+            validationResult.innerText = "Proszę uzupełnić imię!!!";
+        }
+        else if (tel.value == "" && email.value == "") {
+            validationResult.innerText = "Proszę uzupełnić telefon lub maila!!!";
+        }
+        else if (message.value == "") {
+            validationResult.innerText = "Proszę uzupełnić wiadomość!!!";
+        }
+        else if (validateEmail(email.value) == false) {
+            validationResult.innerText = "Błedny format e-maila";
+        } 
+        else if (validateTel(tel.value) == false) {
+            validationResult.innerText = "Błedny format telefonu";
+        } 
+        else {
+            validationResult.innerText = "";
+            name.value = "";
+            tel.value = "";
+            email.value = "";
+            message.value = "";
+        }            
+ 
     });
 
-
-
-
 };
-
-
