@@ -109,12 +109,14 @@ window.onload = function () {
             validationResult.innerText = "Proszę uzupełnić wiadomość!!!";
         }
 
-        else if (validateEmail(email.value) == false && tel.value == "") {
-            validationResult.innerText = "Błedny format Magda   e-maila";
+        else if (email.value !== "" && validateEmail(email.value) == false) {
+            validationResult.innerText = "Błedny format e-maila";
         }
-        else if (validateTel(tel.value) == false && email.value == "") {
+
+        else if (tel.value !== "" && validateTel(tel.value) == false) {
             validationResult.innerText = "Błedny format telefonu";
         }
+
         else {
             validationResult.innerText = "";
             name.value = "";
