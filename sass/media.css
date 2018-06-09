@@ -30,9 +30,10 @@
   }
   .jumbotron .jumbotron__slogan h1 {
     font-size: 30px;
+    padding: 0 20px;
   }
   .jumbotron .jumbotron__slogan p {
-    padding: 0;
+    padding: 10px 20px;
   }
   .aboutUs .aboutUs-container {
     flex-direction: column;
@@ -86,8 +87,5 @@
   footer .footer__container .menu__bottom__items {
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  footer .footer__container .menu__bottom__items li {
-    margin: 5px 5px;
   }
 }

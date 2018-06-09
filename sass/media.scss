@@ -44,9 +44,10 @@ $main-color: #F44336;
         .jumbotron__slogan {
             h1 {
                 font-size: 30px;
+                padding: 0 20px;
             }
             p {
-                padding: 0;
+                padding: 10px 20px;
             }
         }
     }
@@ -118,9 +119,6 @@ $main-color: #F44336;
                 justify-content: space-around;
                 flex-wrap: wrap;
 
-                li {
-                    margin: 5px 5px;
-                }
             }
         }
     }
