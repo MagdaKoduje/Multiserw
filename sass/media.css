@@ -1,4 +1,4 @@
-@media (max-width: 790px) {
+@media (max-width: 767px) {
   .logo .logo-container {
     display: inline-block;
   }
@@ -12,18 +12,28 @@
     text-align: center;
   }
   .menu .menu__top__items {
-    display: inline-block;
-    padding: 0;
+    display: block;
+    padding: 10px 0;
     margin: 0;
+  }
+  .menu .menu__top__items li {
+    padding: 0;
+    display: block;
+    transition: 0.3s;
   }
   .menu .menu__top__items li:after {
     display: none;
   }
+  .menu .menu__top__items li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
   .menu .menu__top__items li a {
-    height: 30px;
-    display: inline-block;
-    line-height: 30px;
-    padding: 0 10px;
+    display: block;
+    padding: 10px;
+  }
+  .menu .menu__top__items li a:hover {
+    color: white;
+    opacity: 1;
   }
   .jumbotron {
     padding: 100px 0;
