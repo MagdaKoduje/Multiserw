@@ -99,3 +99,23 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    padding-left: 0;
+  }
+  .logo .logo-container .data {
+    padding: 10px 0px;
+    padding-top: 20px;
+  }
+  .logo .logo-container .data .data__container {
+    font-size: 12px;
+    padding: 0;
+  }
+  .logo .logo-container .data .data__icon i {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+    padding-right: 10px;
+  }
+}

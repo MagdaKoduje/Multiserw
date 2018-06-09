@@ -1,63 +1,69 @@
 $main-color: #F44336;
 
-
 @media (max-width: 767px) {
-    
     .logo .logo-container {
         display: inline-block;
+
         .data {
             display: none;
         }
+
         .logo__img {
             img {
                 width: 100%;
-            }           
+            }
+        }
     }
-}
+
     .menu {
         text-align: center;
+
         .menu__top__items {
             display: block;
             padding: 10px 0;
             margin: 0;
-    
+
             li {
                 padding: 0;
                 display: block;
                 transition: 0.3s;
+
                 &:after {
                     display: none;
                 }
+
                 &:hover {
-                    background-color: rgba(255,255,255,0.25);
+                    background-color: rgba(255, 255, 255, 0.25);
                 }
+
                 a {
                     display: block;
                     padding: 10px;
+
                     &:hover {
                         color: white;
                         opacity: 1;
-                    
                     }
                 }
             }
         }
     }
 
-
     .jumbotron {
         padding: 100px 0;
+
         .jumbotron__slogan {
             h1 {
                 font-size: 30px;
                 padding: 0 20px;
             }
+
             p {
                 padding: 10px 20px;
             }
         }
     }
-  
+
     .aboutUs {
         .aboutUs-container {
             flex-direction: column;
@@ -124,7 +130,6 @@ $main-color: #F44336;
             .menu__bottom__items {
                 justify-content: space-around;
                 flex-wrap: wrap;
-
             }
         }
     }
@@ -132,6 +137,25 @@ $main-color: #F44336;
 
 $main-color: #F44336;
 
-// @media (min-width: 790px) and (max-width: 1199px) {}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo {
+        padding-left: 0;
+
+        .logo-container .data {
+            padding: 10px 0px;
+            padding-top: 20px;
+            .data__container {
+                font-size: 12px;
+                padding: 0;
+            }
+            .data__icon i {
+                font-size: 20px;
+                line-height: 30px;
+                padding: 5px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
 
 // @media (min-width: 1200px) {

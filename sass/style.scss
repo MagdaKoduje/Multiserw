@@ -82,15 +82,15 @@ body {
 
         .data {
             display: flex;
+            padding: 10px;
 
             .data__adress,
             .data__phone,
             .data__mail,
             .data__clock {
                 display: flex;
-                margin: 10px;
-                margin-top: 20px;
-                padding-top: 10px;
+                padding: 10px;
+                padding-top: 20px;
             }
 
             .data__icon i {
@@ -103,9 +103,14 @@ body {
             .data__container {
                 display: flex;
                 flex-direction: column;
-
                 span:first-child {
                     color: $main-color;
+                }
+                span {
+                    white-space: nowrap;
+                }
+                .wrap {
+                    white-space: normal;
                 }
             }
         }

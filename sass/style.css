@@ -75,6 +75,7 @@ body {
 
 .logo .logo-container .data {
   display: flex;
+  padding: 10px;
 }
 
 .logo .logo-container .data .data__adress,
@@ -82,9 +83,8 @@ body {
 .logo .logo-container .data .data__mail,
 .logo .logo-container .data .data__clock {
   display: flex;
-  margin: 10px;
-  margin-top: 20px;
-  padding-top: 10px;
+  padding: 10px;
+  padding-top: 20px;
 }
 
 .logo .logo-container .data .data__icon i {
@@ -101,6 +101,14 @@ body {
 
 .logo .logo-container .data .data__container span:first-child {
   color: #F44336;
+}
+
+.logo .logo-container .data .data__container span {
+  white-space: nowrap;
+}
+
+.logo .logo-container .data .data__container .wrap {
+  white-space: normal;
 }
 
 /*#endregion logo*/
