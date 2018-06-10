@@ -64,33 +64,27 @@ $main-color: #F44336;
         }
     }
 
-    .aboutUs {
-        .aboutUs-container {
-            flex-direction: column;
-
-            .history {
-                padding: 5px;
-
-                p {
-                    font-size: 13px;
-                    text-align: center;
-                    line-height: 20px;
-                }
-            }
+    .aboutUs .aboutUs-container {
+        padding: 10px;
+        .henio {
+            width: 100%;
+            max-width: 200px;
+            float: none;
         }
-    }
-
-    .partners .partners_logo {
-        flex-direction: column;
-
-        div {
-            flex-basis: 50px;
-
+        p {
+            font-size: 14px;
+            text-align: center;
+            line-height: 25px;
+        }
+        .partners_logo {
+            flex-wrap: wrap;
+            justify-content: space-around;
             img {
-                max-width: 50%;
+                max-width: 120px;
             }
         }
     }
+
 
     .offer__category__title {
         font-size: 12px;
@@ -144,10 +138,12 @@ $main-color: #F44336;
         .logo-container .data {
             padding: 10px 0px;
             padding-top: 20px;
+
             .data__container {
                 font-size: 12px;
                 padding: 0;
             }
+
             .data__icon i {
                 font-size: 20px;
                 line-height: 30px;
@@ -155,6 +151,11 @@ $main-color: #F44336;
                 padding-right: 10px;
             }
         }
+    }
+
+    .aboutUs .aboutUs-container .partners_logo div {
+            flex-basis: 110px;
+        
     }
 }
 

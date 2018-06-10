@@ -46,24 +46,24 @@
     padding: 10px 20px;
   }
   .aboutUs .aboutUs-container {
-    flex-direction: column;
+    padding: 10px;
   }
-  .aboutUs .aboutUs-container .history {
-    padding: 5px;
+  .aboutUs .aboutUs-container .henio {
+    width: 100%;
+    max-width: 200px;
+    float: none;
   }
-  .aboutUs .aboutUs-container .history p {
-    font-size: 13px;
+  .aboutUs .aboutUs-container p {
+    font-size: 14px;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
   }
-  .partners .partners_logo {
-    flex-direction: column;
+  .aboutUs .aboutUs-container .partners_logo {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  .partners .partners_logo div {
-    flex-basis: 50px;
-  }
-  .partners .partners_logo div img {
-    max-width: 50%;
+  .aboutUs .aboutUs-container .partners_logo img {
+    max-width: 120px;
   }
   .offer__category__title {
     font-size: 12px;
@@ -117,5 +117,8 @@
     line-height: 30px;
     padding: 5px;
     padding-right: 10px;
+  }
+  .aboutUs .aboutUs-container .partners_logo div {
+    flex-basis: 110px;
   }
 }

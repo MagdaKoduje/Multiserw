@@ -193,65 +193,44 @@ body {
 }
 
 .aboutUs .aboutUs-container {
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
-.aboutUs .aboutUs-container .photo {
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-basis: 250px;
-}
-
-.aboutUs .aboutUs-container .photo img {
+.aboutUs .aboutUs-container .henio {
   height: auto;
   border: 5px solid #ccc;
-  width: 100%;
+  width: 250px;
+  float: left;
+  margin-right: 20px;
 }
 
-.aboutUs .aboutUs-container .history {
-  text-align: left;
-  padding: 15px 50px;
-}
-
-.aboutUs .aboutUs-container .history p {
+.aboutUs .aboutUs-container p {
   font-size: 17px;
   margin: 0;
   line-height: 30px;
+  padding-bottom: 15px;
+  text-align: justify;
 }
 
-.aboutUs .aboutUs-container .history button {
+.aboutUs .aboutUs-container button {
   margin-top: 30px;
 }
 
-/*#endregion aboutUs*/
-/*#region partners*/
-.partners {
-  text-align: center;
-  padding: 30px 0;
-  background-color: #f0f0f0;
-}
-
-.partners p {
-  font-size: 17px;
-  line-height: 30px;
-  padding-bottom: 40px;
-}
-
-.partners .partners_logo {
+.aboutUs .partners_logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
+  margin: 0;
 }
 
-.partners .partners_logo div {
-  flex-basis: 150px;
+.aboutUs .partners_logo div {
+  flex-basis: 130px;
   flex-grow: 0;
   flex-shrink: 0;
 }
 
-.partners .partners_logo div img {
+.aboutUs .partners_logo div img {
   max-width: 100%;
   height: auto;
   opacity: 0.5;
@@ -259,11 +238,11 @@ body {
   transition: 0.5s;
 }
 
-.partners .partners_logo div img:hover {
+.aboutUs .partners_logo div img:hover {
   opacity: 1;
 }
 
-/*#endregion partners*/
+/*#endregion aboutUs*/
 /*#region offer*/
 .offer-section {
   text-align: center;
