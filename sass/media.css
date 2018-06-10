@@ -101,8 +101,14 @@
     font-size: 13px;
     width: 80%;
   }
-  .price .price__container {
-    flex-direction: column;
+  .price .price__container .price-section {
+    flex-basis: auto;
+    margin: 10px 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .price .price__container .price-section:hover {
+    transform: none;
   }
   .contact .form input,
   .contact .form textarea {
@@ -156,5 +162,9 @@
   .offer-section .offer .offer__category .offer__category__img-container {
     max-width: 40%;
     flex-basis: 40%;
+  }
+  .price .price__container .price-section {
+    flex-basis: 330px;
+    margin: 15px;
   }
 }

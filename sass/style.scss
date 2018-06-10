@@ -411,10 +411,11 @@ body {
 
     .price__container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
 
         .price-section {
-            flex-basis: 400px;
+            flex-basis: 380px;
             flex-shrink: 0;
             flex-grow: 0;
             background-color: white;

@@ -129,15 +129,25 @@ $main-color: #F44336;
         }
     }
 
+
+
     .brands .other__brands {
         padding: 0;
         font-size: 13px;
         width: 80%;
     }
 
-    .price .price__container {
-        flex-direction: column;
+    .price .price__container .price-section {
+        flex-basis: auto;
+        margin: 10px 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        &:hover {
+            transform: none;
+        }
     }
+
+
 
     .contact .form input,
     .contact .form textarea {
@@ -206,6 +216,11 @@ $main-color: #F44336;
                 flex-basis: 40%;
             }
         }
+    }
+
+    .price .price__container .price-section {
+        flex-basis: 330px;
+        margin: 15px;
     }
 }
 
