@@ -66,37 +66,67 @@ $main-color: #F44336;
 
     .aboutUs .aboutUs-container {
         padding: 10px;
+
         .owner {
             width: 100%;
             max-width: 200px;
             float: none;
         }
+
         p {
             font-size: 14px;
             text-align: center;
             line-height: 25px;
         }
+
         .partners_logo {
             flex-wrap: wrap;
             justify-content: space-around;
+
             img {
                 max-width: 120px;
             }
         }
     }
 
+    .offer-section {
+        .offer__button .button {
+            margin: 10px;
+        }
+        .offer__intro {
+            font-size: 15px;
+        }
 
-    .offer__category__title {
-        font-size: 12px;
-        padding-left: 30px;
-    }
+        .offer {
+            padding: 0;
+            margin-top: 20px;
 
-    .offer__category__list {
-        font-size: 10px;
-    }
+            .offer__category {
+                flex-wrap: wrap;
+                padding: 10px 15px;
+                font-size: 14px;
 
-    .offer__category__img-container {
-        display: none;
+                .offer__category__text-container {
+                    max-width: 100%;
+                    flex-basis: 100%;
+
+                    .offer__category__list {
+                        padding-left: 10px;
+                    }
+                }
+
+                .offer__category__img-container {
+                    max-width: 100%;
+                    flex-basis: 100%;
+                    padding: 20px 0;
+
+                    .offer__category__img {
+                        margin: 0 auto;
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
     }
 
     .brands .other__brands {
@@ -154,8 +184,28 @@ $main-color: #F44336;
     }
 
     .aboutUs .aboutUs-container .partners_logo div {
-            flex-basis: 110px;
-        
+        flex-basis: 110px;
+    }
+
+    .offer-section .offer {
+        .offer__category {
+            padding: 20px 30px;
+            font-size: 14px;
+
+            .offer__category__text-container {
+                max-width: 60%;
+                flex-basis: 60%;
+
+                .offer__category__list {
+                    padding-left: 20px;
+                }
+            }
+
+            .offer__category__img-container {
+                max-width: 40%;
+                flex-basis: 40%;
+            }
+        }
     }
 }
 

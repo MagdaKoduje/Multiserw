@@ -65,15 +65,36 @@
   .aboutUs .aboutUs-container .partners_logo img {
     max-width: 120px;
   }
-  .offer__category__title {
-    font-size: 12px;
-    padding-left: 30px;
+  .offer-section .offer__button .button {
+    margin: 10px;
   }
-  .offer__category__list {
-    font-size: 10px;
+  .offer-section .offer__intro {
+    font-size: 15px;
   }
-  .offer__category__img-container {
-    display: none;
+  .offer-section .offer {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .offer-section .offer .offer__category {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .offer-section .offer .offer__category .offer__category__text-container {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .offer-section .offer .offer__category .offer__category__text-container .offer__category__list {
+    padding-left: 10px;
+  }
+  .offer-section .offer .offer__category .offer__category__img-container {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 20px 0;
+  }
+  .offer-section .offer .offer__category .offer__category__img-container .offer__category__img {
+    margin: 0 auto;
+    max-width: 250px;
   }
   .brands .other__brands {
     padding: 0;
@@ -120,5 +141,20 @@
   }
   .aboutUs .aboutUs-container .partners_logo div {
     flex-basis: 110px;
+  }
+  .offer-section .offer .offer__category {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+  .offer-section .offer .offer__category .offer__category__text-container {
+    max-width: 60%;
+    flex-basis: 60%;
+  }
+  .offer-section .offer .offer__category .offer__category__text-container .offer__category__list {
+    padding-left: 20px;
+  }
+  .offer-section .offer .offer__category .offer__category__img-container {
+    max-width: 40%;
+    flex-basis: 40%;
   }
 }
