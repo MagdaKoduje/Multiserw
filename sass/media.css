@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .logo .logo-container {
     display: inline-block;
   }
@@ -137,7 +137,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     padding-left: 0;
   }
