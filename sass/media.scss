@@ -155,16 +155,26 @@ $main-color: #F44336;
         }
     }
 
-
     footer {
         text-align: center;
+        padding: 30px 0 20px;
 
         .footer__container {
             flex-direction: column;
 
+            span {
+                padding: 0px;
+                padding-bottom: 10px;
+            }
+
+            
             .menu__bottom__items {
-                justify-content: space-around;
+                justify-content: center;
                 flex-wrap: wrap;
+                
+                li {
+                    margin: 0 7px;             
+                   }
             }
         }
     }
@@ -223,6 +233,8 @@ $main-color: #F44336;
         flex-basis: 330px;
         margin: 15px;
     }
+
+    
 }
 
 // @media (min-width: 1200px) {

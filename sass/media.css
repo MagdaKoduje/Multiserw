@@ -119,13 +119,21 @@
   }
   footer {
     text-align: center;
+    padding: 30px 0 20px;
   }
   footer .footer__container {
     flex-direction: column;
   }
+  footer .footer__container span {
+    padding: 0px;
+    padding-bottom: 10px;
+  }
   footer .footer__container .menu__bottom__items {
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+  }
+  footer .footer__container .menu__bottom__items li {
+    margin: 0 7px;
   }
 }
 
