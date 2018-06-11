@@ -356,10 +356,6 @@ body {
     background-position: center;
     background-size: cover;
 
-    .container {
-        max-width: 1250px;
-    }
-
     .section__title .caption {
         color: white;
     }
@@ -380,22 +376,26 @@ body {
         display: block;
     }
 
-    .slider {
-        padding: 20px 0;
+    .slider-container {
+        padding: 0 50px;
 
-        div {
-            display: flex;
-            align-items: center;
-
-            img {
-                width: auto;
-                height: 30px;
-                margin: 0 auto;
-                opacity: 0.6;
-            }
-
-            .slider__LG {
-                height: 50px;
+        .slider {
+            padding: 20px 0;
+    
+            div {
+                display: flex;
+                align-items: center;
+    
+                img {
+                    width: auto;
+                    height: 30px;
+                    margin: 0 auto;
+                    opacity: 0.6;
+                }
+    
+                .slider__LG {
+                    height: 50px;
+                }
             }
         }
     }

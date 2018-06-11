@@ -330,10 +330,6 @@ body {
   background-size: cover;
 }
 
-.brands .container {
-  max-width: 1250px;
-}
-
 .brands .section__title .caption {
   color: white;
 }
@@ -354,23 +350,27 @@ body {
   display: block;
 }
 
-.brands .slider {
+.brands .slider-container {
+  padding: 0 50px;
+}
+
+.brands .slider-container .slider {
   padding: 20px 0;
 }
 
-.brands .slider div {
+.brands .slider-container .slider div {
   display: flex;
   align-items: center;
 }
 
-.brands .slider div img {
+.brands .slider-container .slider div img {
   width: auto;
   height: 30px;
   margin: 0 auto;
   opacity: 0.6;
 }
 
-.brands .slider div .slider__LG {
+.brands .slider-container .slider div .slider__LG {
   height: 50px;
 }
 

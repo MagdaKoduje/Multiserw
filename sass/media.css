@@ -110,6 +110,15 @@
   .price .price__container .price-section:hover {
     transform: none;
   }
+  .brands .slider-container {
+    padding: 0 40px;
+  }
+  .brands .slider-container .slider div img {
+    height: 20px;
+  }
+  .brands .slider-container .slider div .slider__LG {
+    height: 35px;
+  }
   .contact .form {
     padding: 0 20px;
     flex-direction: column;
@@ -172,6 +181,12 @@
   .offer-section .offer .offer__category .offer__category__img-container {
     max-width: 40%;
     flex-basis: 40%;
+  }
+  .brands .slider-container .slider div img {
+    height: 25px;
+  }
+  .brands .slider-container .slider div .slider__LG {
+    height: 40px;
   }
   .price .price__container .price-section {
     flex-basis: 330px;
