@@ -291,7 +291,9 @@ body {
             margin: 20px 5px;
 
             &.inactive:hover {
-                background-color: rgb(255, 236, 234);
+                background-color: #F44336;
+                color: white;
+                opacity: 0.7;
             }
         }
     }
