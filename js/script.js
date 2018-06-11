@@ -57,7 +57,7 @@ function validateEmail(email) {
 
 //weryfikacja telefon
 function validateTel(tel) {
-    var reg = /^[0-9\+]{8,13}$/;
+    var reg = /^[0-9\+\-]{8,13}$/;
     if (!reg.test(tel))
         return false;
     else
@@ -122,21 +122,21 @@ window.onload = function () {
 
     buttonSubmit.addEventListener("click", function () {
         if (name.value == "") {
-            validationResult.innerText = "Proszę uzupełnić imię!!!";
+            validationResult.innerText = "Błąd! Imię jest wymagane!";
         }
         else if (tel.value == "" && email.value == "") {
-            validationResult.innerText = "Proszę uzupełnić telefon lub maila!!!";
+            validationResult.innerText = "Błąd! Telefon lub adres e-mail są wymagane!";
         }
         else if (message.value == "") {
-            validationResult.innerText = "Proszę uzupełnić wiadomość!!!";
+            validationResult.innerText = "Błąd! Wiadomość jest wymagana!";
         }
 
         else if (email.value !== "" && validateEmail(email.value) == false) {
-            validationResult.innerText = "Błedny format e-maila";
+            validationResult.innerText = "Błąd! Niepoprawny format adresu e-mail!";
         }
 
         else if (tel.value !== "" && validateTel(tel.value) == false) {
-            validationResult.innerText = "Błedny format telefonu";
+            validationResult.innerText = "Błąd! Niepoprawny format telefonu!";
         }
 
         else {
