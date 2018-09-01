@@ -453,6 +453,10 @@ body {
   color: #F44336;
 }
 
+.contact .success__message {
+  color: green;
+}
+
 .contact .form {
   display: flex;
   justify-content: center;

@@ -481,6 +481,10 @@ body {
     .validation {
         color: $main-color;
     }
+    
+    .success__message {
+        color: green;
+    }
 
     .form {
         display: flex;

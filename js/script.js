@@ -56,6 +56,7 @@ function validateEmail(email) {
 }
 
 //weryfikacja telefon
+
 function validateTel(tel) {
     var reg = /^[0-9\+\-]{8,13}$/;
     if (!reg.test(tel))
@@ -122,31 +123,45 @@ window.onload = function () {
 
 
     buttonSubmit.addEventListener("click", function () {
+        var listOfError = [];
+
         if (name.value == "") {
-            validationResult.innerText = "Błąd! Imię jest wymagane!";
+            listOfError.push("Imię jest wymagane!");
         }
-        else if (tel.value == "" && email.value == "") {
-            validationResult.innerText = "Błąd! Telefon lub adres e-mail są wymagane!";
+        if (tel.value == "" && email.value == "") {
+            listOfError.push("Telefon lub adres e-mail są wymagane!");
         }
-        else if (message.value == "") {
-            validationResult.innerText = "Błąd! Wiadomość jest wymagana!";
+        if (message.value == "") {
+            listOfError.push("Wiadomość jest wymagana!");
         }
-
-        else if (email.value !== "" && validateEmail(email.value) == false) {
-            validationResult.innerText = "Błąd! Niepoprawny format adresu e-mail!";
+        if (email.value !== "" && validateEmail(email.value) == false) {
+            listOfError.push("Niepoprawny format adresu e-mail!");
         }
-
-        else if (tel.value !== "" && validateTel(tel.value) == false) {
-            validationResult.innerText = "Błąd! Niepoprawny format telefonu!";
+        if (tel.value !== "" && validateTel(tel.value) == false) {
+            listOfError.push("Niepoprawny format telefonu!");
         }
 
-        else {
+        validationResult.innerHTML = "";
+        var successMessage = document.getElementById("success__message");
+        successMessage.innerHTML = "";
+        
+
+        for (var i = 0; i < listOfError.length; i++) {
+            var currentError = listOfError[i];
+            validationResult.innerHTML = validationResult.innerHTML + currentError + "<br>";
+        }
+
+        if (listOfError.length == 0) {
             validationResult.innerText = "";
             name.value = "";
             tel.value = "";
             email.value = "";
             message.value = "";
+            
+            successMessage.innerText = "Wiadomość została wysłana";
         }
+
+
 
     });
 };
