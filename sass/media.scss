@@ -93,6 +93,7 @@ $main-color: #F44336;
         .offer__button .button {
             margin: 10px;
         }
+
         .offer__intro {
             font-size: 15px;
         }
@@ -129,8 +130,6 @@ $main-color: #F44336;
         }
     }
 
-
-
     .brands .other__brands {
         padding: 0;
         font-size: 13px;
@@ -142,6 +141,7 @@ $main-color: #F44336;
         margin: 10px 0;
         flex-grow: 1;
         flex-shrink: 1;
+
         &:hover {
             transform: none;
         }
@@ -149,10 +149,12 @@ $main-color: #F44336;
 
     .brands .slider-container {
         padding: 0 40px;
+
         .slider div {
             img {
                 height: 20px;
             }
+
             .slider__LG {
                 height: 35px;
             }
@@ -162,6 +164,7 @@ $main-color: #F44336;
     .contact .form {
         padding: 0 20px;
         flex-direction: column;
+
         .form__data, .form__message {
             flex-basis: auto;
         }
@@ -180,15 +183,22 @@ $main-color: #F44336;
                 font-size: 12px;
             }
 
-            
             .menu__bottom__items {
                 justify-content: center;
                 flex-wrap: wrap;
-                
+
                 li {
-                    margin: 0 10px;             
-                   }
+                    margin: 0 10px;
+                }
             }
+        }
+    }
+
+    .privacy-policy .container {
+        padding: 15px 20px;
+
+        ol ol {
+            padding: 0;
         }
     }
 }
@@ -246,18 +256,16 @@ $main-color: #F44336;
         img {
             height: 25px;
         }
+
         .slider__LG {
             height: 40px;
         }
     }
 
-
     .price .price__container .price-section {
         flex-basis: 330px;
         margin: 15px;
     }
-
-    
 }
 
 // @media (min-width: 1200px) {

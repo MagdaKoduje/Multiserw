@@ -120,6 +120,7 @@ window.onload = function () {
     var buttonSubmit = document.getElementById("button-submit");
     var validationResult = document.getElementById("validation-result");
 
+
     buttonSubmit.addEventListener("click", function () {
         if (name.value == "") {
             validationResult.innerText = "Błąd! Imię jest wymagane!";
@@ -148,5 +149,37 @@ window.onload = function () {
         }
 
     });
-
 };
+
+$(document).ready(function () {
+
+    function setCookie(name, value, expireDays) {
+        var today = new Date();
+        var expire = new Date();
+        if (expireDays == null || expireDays == 0) expireDays = 1;
+        expire.setTime(today.getTime() + 3600000 * 24 * expireDays);
+        document.cookie = name + "=" + escape(value) + ((expire === null) ? "" : ("; expires=" + expire.toGMTString())) + "; path=/";
+    }
+
+    function checkCookie(name) {
+        if (document.cookie !== "") {
+            var toCookie = document.cookie.split("; ");
+            for (i = 0; i < toCookie.length; i++) {
+                var cookieName = toCookie[i].split("=")[0];
+                if (cookieName == name)
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    if (!checkCookie('cookie-accepted')) {
+        $('.cookies-warning').show();
+    }
+
+    $('#accept-cookies-btn').click(function (e) {
+        setCookie('cookie-accepted', 'yes', 14);
+        $('.cookies-warning').fadeOut();
+    });
+});

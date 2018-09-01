@@ -540,3 +540,57 @@ footer .menu__bottom__items li a:hover {
 }
 
 /*#endregion footer*/
+/*#region privacy policy*/
+.privacy-policy .container {
+  padding: 30px 40px;
+}
+
+.privacy-policy ol li {
+  margin: 5px 0 10px;
+}
+
+.privacy-policy ol ol {
+  list-style-type: lower-alpha;
+}
+
+.privacy-policy a {
+  color: #F44336;
+  text-decoration: none;
+}
+
+.privacy-policy a:hover {
+  text-decoration: underline;
+}
+
+.privacy-policy .google-link {
+  word-break: break-all;
+}
+
+/*#endregion*/
+/*#region cookies warning */
+.cookies-warning {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  padding: 15px 30px;
+}
+
+.cookies-warning a {
+  color: #F44336;
+  text-decoration: none;
+}
+
+.cookies-warning a:hover {
+  text-decoration: underline;
+}
+
+.cookies-warning .button {
+  padding: 5px 7px;
+  font-size: 11px;
+  border-radius: 3px;
+  margin: 0;
+}
+
+/*#endregion*/

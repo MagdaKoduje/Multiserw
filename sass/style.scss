@@ -24,7 +24,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -574,3 +573,65 @@ footer {
 }
 
 /*#endregion footer*/
+
+/*#region privacy policy*/
+
+.privacy-policy {
+    .container {
+        padding: 30px 40px;
+    }
+
+    ol {
+        li {
+            margin: 5px 0 10px;
+        }
+
+        ol {
+            list-style-type: lower-alpha;
+        }
+    }
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .google-link {
+        word-break: break-all;
+    }
+}
+
+/*#endregion*/
+
+/*#region cookies warning */
+
+.cookies-warning {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background: #f6f6f6;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .button {
+        padding: 5px 7px;
+        font-size: 11px;
+        border-radius: 3px;
+        margin: 0;
+    }
+}
+
+/*#endregion*/

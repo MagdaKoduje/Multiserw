@@ -145,6 +145,12 @@
   footer .footer__container .menu__bottom__items li {
     margin: 0 10px;
   }
+  .privacy-policy .container {
+    padding: 15px 20px;
+  }
+  .privacy-policy .container ol ol {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
