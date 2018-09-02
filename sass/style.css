@@ -365,8 +365,10 @@ body {
 }
 
 .brands .slider-container .slider div {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .brands .slider-container .slider div img {

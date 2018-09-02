@@ -389,8 +389,10 @@ body {
             padding: 20px 0;
 
             div {
-                display: flex;
                 align-items: center;
+                display: flex;
+                flex-grow: 0;
+                flex-shrink: 0;
 
                 img {
                     width: auto;
