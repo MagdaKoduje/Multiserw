@@ -120,7 +120,7 @@ window.onload = function () {
 
     var buttonSubmit = document.getElementById("button-submit");
     var validationResult = document.getElementById("validation-result");
-
+    var successMessage = document.getElementById("success__message");
 
     buttonSubmit.addEventListener("click", function () {
         var listOfError = [];
@@ -142,13 +142,15 @@ window.onload = function () {
         }
 
         validationResult.innerHTML = "";
-        var successMessage = document.getElementById("success__message");
         successMessage.innerHTML = "";
 
 
         for (var i = 0; i < listOfError.length; i++) {
             var currentError = listOfError[i];
             validationResult.innerHTML = validationResult.innerHTML + currentError + "<br>";
+        }
+        if (listOfError.length > 0) {
+            validationResult.scrollIntoView();
         }
 
         if (listOfError.length == 0) {
@@ -181,15 +183,17 @@ window.onload = function () {
                     message.value = "";
 
                     successMessage.innerText = "Wiadomość została wysłana";
-
+                    successMessage.scrollIntoView();
                 }
                 else {
                     validationResult.innerText = "Błąd! " + data.Message;
+                    validationResult.scrollIntoView();
                 }
             });
 
             request.fail(function (jqXHR, textStatus, err2) {
                 validationResult.innerText = "Błąd! " + err2;
+                validationResult.scrollIntoView();
             });
         }
 
