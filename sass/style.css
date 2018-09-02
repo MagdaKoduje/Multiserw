@@ -159,7 +159,7 @@ body {
 /*#region jumbotron*/
 .jumbotron {
   height: 500px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../images/jumbotron7.jpg");
+  background-image: url("../images/jumbotron1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
