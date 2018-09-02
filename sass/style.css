@@ -76,6 +76,7 @@ body {
 
 .logo .logo-container .logo__img img {
   padding: 10px;
+  max-width: 260px;
 }
 
 .logo .logo-container .data {

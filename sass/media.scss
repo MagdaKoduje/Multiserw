@@ -1,16 +1,21 @@
 $main-color: #F44336;
 
 @media screen and (max-width: 767px) {
-    .logo .logo-container {
-        display: inline-block;
+    .logo {
+        text-align: center;
 
-        .data {
-            display: none;
-        }
+        .logo-container {
+            display: inline-block;
 
-        .logo__img {
-            img {
-                width: 100%;
+            .data {
+                display: none;
+            }
+
+            .logo__img {
+                img {
+                    width: 100%;
+                    max-width: 350px;
+                }
             }
         }
     }
@@ -224,6 +229,10 @@ $main-color: #F44336;
                 padding: 5px;
                 padding-right: 10px;
             }
+        }
+
+        .logo__img img {
+            max-width: 240px;
         }
     }
 
