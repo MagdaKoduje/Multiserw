@@ -144,7 +144,7 @@ window.onload = function () {
         validationResult.innerHTML = "";
         var successMessage = document.getElementById("success__message");
         successMessage.innerHTML = "";
-        
+
 
         for (var i = 0; i < listOfError.length; i++) {
             var currentError = listOfError[i];
@@ -152,13 +152,45 @@ window.onload = function () {
         }
 
         if (listOfError.length == 0) {
-            validationResult.innerText = "";
-            name.value = "";
-            tel.value = "";
-            email.value = "";
-            message.value = "";
-            
-            successMessage.innerText = "Wiadomość została wysłana";
+            var url = "http://multiserw.pl/sendForm.php";
+            var formData = {
+                FirstName: name.value,
+                Phone: tel.value,
+                Email: email.value,
+                Message: message.value
+            };
+
+            var request = $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: 'POST',
+                url: url,
+                data: JSON.stringify(formData),
+                dataType: 'json'
+            });
+
+            request.done(function (data) {
+                if (data.Success) {
+
+                    validationResult.innerText = "";
+                    name.value = "";
+                    tel.value = "";
+                    email.value = "";
+                    message.value = "";
+
+                    successMessage.innerText = "Wiadomość została wysłana";
+
+                }
+                else {
+                    validationResult.innerText = "Błąd! " + data.Message;
+                }
+            });
+
+            request.fail(function (jqXHR, textStatus, err2) {
+                validationResult.innerText = "Błąd! " + err2;
+            });
         }
 
 
