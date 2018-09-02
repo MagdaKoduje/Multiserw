@@ -58,7 +58,7 @@ function validateEmail(email) {
 //weryfikacja telefon
 
 function validateTel(tel) {
-    var reg = /^[0-9\+\-]{8,13}$/;
+    var reg = /^[0-9\+\- ]{8,13}$/;
     if (!reg.test(tel))
         return false;
     else
